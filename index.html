@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carreiras | LOST Studios</title>
-    <meta name="description" content="LOST Studios is a indepedent machinima studio bringing people's vision to life.">
+    <meta name="description" content="LOST Studios is a independent machinima studio bringing people's vision to life.">
     <meta property="og:site_name" content="LOST Studios">
     <meta property="og:title" content="Carreiras">
     <meta property="og:description"
-        content="LOST Studios is a indepedent machinima studio bringing people's vision to life.">
+        content="LOST Studios is a independent machinima studio bringing people's vision to life.">
     <meta property="og:image"
         content="https://raw.githubusercontent.com/LOST-Studios/loststudios-website/main/assets/logo/transparent_icon_logo_loststudios.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Carreiras">
     <meta name="twitter:description"
-        content="LOST Studios is a indepedent machinima studio bringing people's vision to life.">
+        content="LOST Studios is a independent machinima studio bringing people's vision to life.">
     <meta name="twitter:image"
         content="https://raw.githubusercontent.com/LOST-Studios/loststudios-website/main/assets/logo/transparent_icon_logo_loststudios.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -26,13 +27,25 @@
 </head>
 
 <body>
+    <!-- SVG Sprite Library -->
+    <svg style="display: none;">
+        <symbol id="icon-x" viewBox="0 0 24 24">
+            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z" />
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+        </symbol>
+        <symbol id="icon-youtube" viewBox="0 0 24 24">
+            <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </symbol>
+    </svg>
 
     <!-- Scroll Header (hidden by default, appears when scrolling past hero) -->
     <header class="career-header" id="career-header">
         <div class="career-header-inner">
             <a href="../">
                 <img src="../assets/logo/transparent_full_logo_loststudios.png" alt="LOST Studios Logo"
-                    class="career-header-logo">
+                    class="career-header-logo" loading="lazy">
             </a>
         </div>
     </header>
@@ -46,32 +59,23 @@
                 <p class="career-description">A LOST Studios é um estúdio independente de machinima que dá vida à visão
                     das pessoas.</p>
                 <div class="career-socials">
-                    <a href="https://x.com/itsLOSTstudios" target="_blank" class="career-social-link">
-                        <svg class="career-social-svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z" />
-                        </svg>
+                    <a href="https://x.com/itsLOSTstudios" target="_blank" class="career-social-link" title="Siga-nos no X">
+                        <svg class="career-social-svg"><use xlink:href="#icon-x"></use></svg>
                         <span>X</span>
                     </a>
-                    <a href="https://www.instagram.com/itsloststudios" target="_blank" class="career-social-link">
-                        <svg class="career-social-svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                        </svg>
+                    <a href="https://www.instagram.com/itsloststudios" target="_blank" class="career-social-link" title="Siga-nos no Instagram">
+                        <svg class="career-social-svg"><use xlink:href="#icon-instagram"></use></svg>
                         <span>Instagram</span>
                     </a>
-                    <a href="https://www.youtube.com/@itsLOSTstudios" target="_blank" class="career-social-link">
-                        <svg class="career-social-svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                        </svg>
+                    <a href="https://www.youtube.com/@itsLOSTstudios" target="_blank" class="career-social-link" title="Inscreva-se no Youtube">
+                        <svg class="career-social-svg"><use xlink:href="#icon-youtube"></use></svg>
                         <span>Youtube</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Open Positions (reused from hiring page) -->
+        <!-- Open Positions -->
         <section class="career-positions">
             <h2 class="career-section-title">VAGAS <span class="text-gold">ABERTAS</span></h2>
 
@@ -87,8 +91,7 @@
                         <li>Construção de um portfólio</li>
                         <li>Conhecimento do mercado audiovisual</li>
                         <li>Habilidade para investigar temas diversos para dar realismo à história</li>
-                        <li>Compreender a estrutura de três atos (início, meio e fim), arcos de personagens e jornada do
-                            herói</li>
+                        <li>Compreender a estrutura de três atos, arcos de personagens e jornada do herói</li>
                     </ul>
                 </div>
 
@@ -98,13 +101,10 @@
                         <span class="career-vaga-status career-status-open">Aberta</span>
                     </div>
                     <h3>Dublagem</h3>
-                    <p>Nossa equipe está procurando um dublador que consiga interpretar e se adaptar ao que lhe for
-                        solicitado.</p>
+                    <p>Nossa equipe está procurando um dublador que consiga interpretar e se adaptar ao que lhe for solicitado.</p>
                     <ul class="career-vaga-requisitos">
-                        <li>Habilidades de Atuação: Não basta ter uma "voz bonita"; a dublagem é, acima de tudo,
-                            interpretação. O dublador precisa transmitir emoções apenas com a voz.</li>
-                        <li>Boa Dicção e Leitura: É crucial falar bem, ter clareza na leitura e rapidez na sincronização
-                            labial</li>
+                        <li>Habilidades de Atuação: interpretação emocional acima de apenas voz</li>
+                        <li>Boa Dicção e Leitura: clareza na leitura e rapidez na sincronização labial</li>
                     </ul>
                 </div>
 
@@ -114,12 +114,11 @@
                         <span class="career-vaga-status career-status-open">Aberta</span>
                     </div>
                     <h3>Modelagem 3D</h3>
-                    <p>Nossa equipe procura uma pessoa com qualidade e que saiba trabalhar perante as dificuldades.
-                        Variedade é proveitosa e é prezada pela equipe.</p>
+                    <p>Procuramos modeladores com qualidade e adaptabilidade técnica.</p>
                     <ul class="career-vaga-requisitos">
-                        <li>Conhecimento com os seguintes programas: Blender e BlockBench</li>
+                        <li>Proficiência em Blender e BlockBench</li>
                         <li>Variedade de estilos na modelagem</li>
-                        <li>Portfólio demonstrando habilidades na modelagem</li>
+                        <li>Portfólio demonstrando habilidades</li>
                     </ul>
                 </div>
 
@@ -129,10 +128,9 @@
                         <span class="career-vaga-status career-status-open">Aberta</span>
                     </div>
                     <h3>Mapas</h3>
-                    <p>Nossa equipe procura por especialistas em mapas que tenham um trabalho a zelar de alta qualidade
-                        e que sejam qualificados em trabalho coletivo e em criatividade.</p>
+                    <p>Especialistas em mapas qualificados em trabalho coletivo e criatividade.</p>
                     <ul class="career-vaga-requisitos">
-                        <li>Um portfólio</li>
+                        <li>Portfólio de mapas/construções</li>
                         <li>Habilidades em criar estruturas</li>
                         <li>Criatividade exemplar</li>
                     </ul>
@@ -152,27 +150,18 @@
         <div class="career-footer-inner">
             <p>&copy; 2026 LOST Studios. Todos os direitos reservados.</p>
             <div class="career-footer-socials">
-                <a href="https://x.com/itsLOSTstudios" target="_blank" class="career-social-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z" />
-                    </svg>
+                <a href="https://x.com/itsLOSTstudios" target="_blank" class="career-social-icon" title="X">
+                    <svg><use xlink:href="#icon-x"></use></svg>
                 </a>
-                <a href="https://www.instagram.com/itsloststudios" target="_blank" class="career-social-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                    </svg>
+                <a href="https://www.instagram.com/itsloststudios" target="_blank" class="career-social-icon" title="Instagram">
+                    <svg><use xlink:href="#icon-instagram"></use></svg>
                 </a>
-                <a href="https://www.youtube.com/@itsLOSTstudios" target="_blank" class="career-social-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
+                <a href="https://www.youtube.com/@itsLOSTstudios" target="_blank" class="career-social-icon" title="Youtube">
+                    <svg><use xlink:href="#icon-youtube"></use></svg>
                 </a>
             </div>
             <img src="../assets/logo/transparent_icon_logo_loststudios.png" alt="LOST Studios Icon"
-                class="career-footer-icon">
+                class="career-footer-icon" loading="lazy">
         </div>
     </footer>
 

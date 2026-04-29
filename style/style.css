@@ -194,8 +194,10 @@ ul {
 .career-glass-panel {
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
+  transform: translateZ(0); /* Hardware acceleration */
 }
 
 .career-vaga-card {
@@ -348,7 +350,7 @@ ul {
   body {
     background:
       radial-gradient(ellipse at 80% 50%, rgba(15, 15, 26, 0.3) 0%, rgba(15, 15, 26, 0.85) 80%, rgba(15, 15, 26, 1) 100%),
-      url('../assets/background/career_background.png') no-repeat 50% center / cover fixed,
+      url('../assets/background/career_background.png') no-repeat 50% center / cover scroll,
       url('../assets/elements/track.png') no-repeat center bottom / 100% auto,
       var(--bg-gradient);
   }

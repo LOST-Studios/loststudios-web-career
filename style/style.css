@@ -4,14 +4,14 @@
 :root {
   --primary-color: #1a1a2e;
   --secondary-color: #16213e;
-  --accent-primary: #924d85;
+  --accent-purple: #924d85;
+  --accent-pink: #924d85;
   --accent-gold: #dec692;
   --text-main: #e0e0e0;
   --text-muted: #a0a0a0;
   --bg-gradient: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --transition-smooth: all 0.3s ease;
 }
 
 * {
@@ -36,7 +36,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  transition: var(--transition-smooth);
 }
 
 ul {
@@ -100,14 +99,13 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   max-width: 800px;
 }
 
 .career-socials {
   display: flex;
   gap: 1.5rem;
-  margin-top: 1rem;
 }
 
 .career-social-link {
@@ -120,10 +118,11 @@ ul {
   border: 1px solid var(--glass-border);
   font-size: 1rem;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .career-social-link:hover {
-  background: var(--accent-primary);
+  background: var(--accent-purple);
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(146, 77, 133, 0.4);
 }
@@ -131,7 +130,6 @@ ul {
 .career-social-svg {
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 
 .career-social-icon {
@@ -143,16 +141,16 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .career-social-icon svg {
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 
 .career-social-icon:hover {
-  background: var(--accent-primary);
+  background: var(--accent-purple);
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(146, 77, 133, 0.4);
 }
@@ -172,7 +170,7 @@ ul {
 }
 
 /* ============================
-   Vagas Section
+   Vagas Section (reused from hiring)
    ============================ */
 .career-positions {
   padding: 4rem 2rem 6rem;
@@ -185,7 +183,6 @@ ul {
   font-size: 2.2rem;
   margin-bottom: 2.5rem;
   text-align: center;
-  letter-spacing: 2px;
 }
 
 .career-vagas-grid {
@@ -203,13 +200,12 @@ ul {
 
 .career-vaga-card {
   padding: 2.5rem;
-  transition: var(--transition-smooth);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .career-vaga-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border-color: var(--accent-primary);
 }
 
 .career-vaga-header {
@@ -230,7 +226,7 @@ ul {
 
 .career-tag-art {
   background: rgba(146, 77, 133, 0.2);
-  color: var(--accent-primary);
+  color: var(--accent-pink);
   border: 1px solid rgba(146, 77, 133, 0.4);
 }
 
@@ -266,6 +262,11 @@ ul {
   margin-bottom: 1.2rem;
 }
 
+.career-vaga-requisitos {
+  list-style: none;
+  padding: 0;
+}
+
 .career-vaga-requisitos li {
   padding: 0.4rem 0;
   color: var(--text-muted);
@@ -295,9 +296,10 @@ ul {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  background: var(--accent-primary);
+  background: var(--accent-pink);
   color: #fff;
   box-shadow: 0 4px 20px rgba(146, 77, 133, 0.4);
+  transition: all 0.3s ease;
 }
 
 .career-btn-apply:hover {
@@ -356,6 +358,10 @@ ul {
     transform: scale(1.3);
   }
 
+  .career-header-inner {
+    padding: 1.8rem 0;
+  }
+
   .career-header-logo {
     height: 30px;
     transform: scale(3.2);
@@ -368,12 +374,38 @@ ul {
     transform: scale(0.9);
   }
 
+  .career-social-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
   .career-section-title {
     font-size: 1.8rem;
   }
 
+  .career-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .career-info-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .career-info-text {
+    text-align: center;
+  }
+
+  .career-mascot-placeholder {
+    height: 300px;
+  }
+
   .career-vagas-grid {
     grid-template-columns: 1fr;
+  }
+
+  .career-vaga-card {
+    padding: 1.5rem;
   }
 
   .career-footer-inner {
